@@ -1,0 +1,9 @@
+[PortalReal].[security].UserOffices
+		[security].Users
+		[security].UserDatas
+		[security].RolePermissions
+		[Security].Rols
+		[Security].Menus
+		[affiliation].Affiliates 
+		[referential].[AffiliateTypes]
+		referential.Regimes
