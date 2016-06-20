@@ -1,0 +1,7 @@
+  insert into [PortalReal].[security].[Rols] (Name,CreatedBy,CreationDate,UpdateBy,UpdateDate,IsActive,IsSyncActive) 
+  values ('USUARIO OFICINA VIRTUAL','developer',GETDATE(),'developer',GETDATE(),1,0)
+  
+  
+  
+    insert into [PortalReal].[security].[Rols] (Name,CreatedBy,CreationDate,UpdateBy,UpdateDate,IsActive,IsSyncActive) 
+  values ('PRESTADOR OFICINA VIRTUAL','developer',GETDATE(),'developer',GETDATE(),1,0)

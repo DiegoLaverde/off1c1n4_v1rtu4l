@@ -1,0 +1,23 @@
+  update [PortalReal].[security].[Menus]  set URL = '/GeneralCertificate' where MenuId = 'MVCModule.Module.Views.Certificates.afiliation'
+  update [PortalReal].[security].[Menus]  set URL = '/GeneralCertificate/GenerateCarnet' where MenuId = 'MVCModule.Module.Views.Certificates.carnet'
+  update [PortalReal].[security].[Menus]  set URL = '/ValidateAffiliate' where MenuId = 'MVCModule.Module.Views.Consult.User'
+  
+  update [PortalReal].[security].[Menus]  set URL = '/RIPS/IndexRIPS' where MenuId = 'MVCModule.Module.Views.RipsValidator.Prevalidator'
+  
+  update [PortalReal].[security].[Menus]  set URL = '/NetworkProviders/Index' where MenuId = 'MVCModule.Module.Views.Certificates.Network'  
+  
+  update [PortalReal].[security].[Menus]  set URL = '/GeneralCarnet' where MenuId = 'MVCModule.Module.Views.Certificates.carnet'
+  
+  /*Menus diego*/
+  --Solicitudes
+  update [PortalReal].[security].[Menus]  set URL = '/Request/TransferMobilityPortability' where MenuId = 'MVCModule.Module.Views.Certificates.TMP'
+  --Actualizacion datos
+  update [PortalReal].[security].[Menus]  set URL = '/SiteAdmin' where MenuId = 'MVCModule.Module.Views.Certificates.Affiliates'
+
+  UPDATE [PortalReal].[security].[Menus]  SET PositionMenu = 810  WHERE MenuId='MVCModule.Module.Views.Certificates.Affiliates'
+  --Consulta afiliado
+  update [PortalReal].[security].[Menus]  set URL = '/Query/InformationAffiliation' where MenuId = 'MVCModule.Module.Views.Certificates.StateAffiliate'
+  --Estado Cartera
+  update [PortalReal].[security].[Menus]  set URL = '/GeneralStatePortFolio' where MenuId = 'MVCModule.Module.Views.Certificates.StatePortFolio'
+  --Instructivo
+  update [PortalReal].[security].[Menus]  set URL = '/Manuals/Instructive' where MenuId = 'MVCModule.Module.Views.Certificates.Instructive'
