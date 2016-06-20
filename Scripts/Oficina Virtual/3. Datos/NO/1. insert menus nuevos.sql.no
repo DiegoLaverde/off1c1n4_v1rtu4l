@@ -1,0 +1,77 @@
+  insert into [PortalReal].[security].[Menus] (MenuId,Name,IsActive,CreatedBy,CreationDate,UpdateBy,UpdateDate,AppType,PositionMenu)
+  values ('MVCModule.Module.Views.Certificates','Certificados',1,'desarrollo',GETDATE(),'desarrollo',GETDATE(),5,811) 
+      insert into [PortalReal].[security].[Menus] (MenuId,Name,IsActive,CreatedBy,CreationDate,UpdateBy,UpdateDate,AppType,PositionMenu)
+  values ('MVCModule.Module.Views.Certificates.afiliation','Certificado afiliación',1,'desarrollo',GETDATE(),'desarrollo',GETDATE(),5,812) 
+  
+        insert into [PortalReal].[security].[Menus] (MenuId,Name,IsActive,CreatedBy,CreationDate,UpdateBy,UpdateDate,AppType,PositionMenu)
+  values ('MVCModule.Module.Views.Certificates.carnet','Carnet de afiliación',1,'desarrollo',GETDATE(),'desarrollo',GETDATE(),5,813) 
+  
+    insert into [PortalReal].[security].[Menus] (MenuId,Name,IsActive,CreatedBy,CreationDate,UpdateBy,UpdateDate,AppType,PositionMenu)
+  values ('MVCModule.Module.Views.Appointment','Citas medicas',1,'desarrollo',GETDATE(),'desarrollo',GETDATE(),5,821) 
+  
+      insert into [PortalReal].[security].[Menus] (MenuId,Name,IsActive,CreatedBy,CreationDate,UpdateBy,UpdateDate,AppType,PositionMenu)
+  values ('MVCModule.Module.Views.Appointment.General','Citas Medicina general',1,'desarrollo',GETDATE(),'desarrollo',GETDATE(),5,821) 
+  
+  
+      insert into [PortalReal].[security].[Menus] (MenuId,Name,IsActive,CreatedBy,CreationDate,UpdateBy,UpdateDate,AppType,PositionMenu)
+  values ('MVCModule.Module.Views.Certificates.Network','Consulta red de prestadores',1,'desarrollo',GETDATE(),'desarrollo',GETDATE(),5,821) 
+  
+  
+        insert into [PortalReal].[security].[Menus] (MenuId,Name,IsActive,CreatedBy,CreationDate,UpdateBy,UpdateDate,AppType,PositionMenu)
+  values ('MVCModule.Module.Views.RipsValidator','Rips',1,'desarrollo',GETDATE(),'desarrollo',GETDATE(),6,831) 
+  
+          insert into [PortalReal].[security].[Menus] (MenuId,Name,IsActive,CreatedBy,CreationDate,UpdateBy,UpdateDate,AppType,PositionMenu)
+  values ('MVCModule.Module.Views.RipsValidator.Prevalidator','Prevalidador Rips',1,'desarrollo',GETDATE(),'desarrollo',GETDATE(),6,832) 
+  
+  
+          insert into [PortalReal].[security].[Menus] (MenuId,Name,IsActive,CreatedBy,CreationDate,UpdateBy,UpdateDate,AppType,PositionMenu)
+  values ('MVCModule.Module.Views.Consult','Consulta',1,'desarrollo',GETDATE(),'desarrollo',GETDATE(),6,841) 
+
+          insert into [PortalReal].[security].[Menus] (MenuId,Name,IsActive,CreatedBy,CreationDate,UpdateBy,UpdateDate,AppType,PositionMenu)
+  values ('MVCModule.Module.Views.Consult.User','Consulta de usuarios',1,'desarrollo',GETDATE(),'desarrollo',GETDATE(),6,842)
+
+/*menus diego*/
+--Solicitudes
+insert into [PortalReal].[security].[Menus] (MenuId,Name,IsActive,CreatedBy,CreationDate,UpdateBy,UpdateDate,AppType,PositionMenu)
+values ('MVCModule.Module.Views.Certificates.TMP','Traslados',1,'desarrollo',GETDATE(),'desarrollo',GETDATE(),5,846)
+
+--Actualizar Datos
+insert into [PortalReal].[security].[Menus] (MenuId,Name,IsActive,CreatedBy,CreationDate,UpdateBy,UpdateDate,AppType,PositionMenu)
+values ('MVCModule.Module.Views.Certificates.Affiliates','Actualizar Datos Afiliado',1,'desarrollo',GETDATE(),'desarrollo',GETDATE(),5,845)
+
+--Consulta Estado Afiliado
+insert into [PortalReal].[security].[Menus] (MenuId,Name,IsActive,CreatedBy,CreationDate,UpdateBy,UpdateDate,AppType,PositionMenu)
+values ('MVCModule.Module.Views.Certificates.StateAffiliate','Consulta Afiliación',1,'desarrollo',GETDATE(),'desarrollo',GETDATE(),5,847)
+
+/*AJUSTES ORDEN DEL MENU PROPUESTO POR ING. CLAUDIA DIA 27/04/2016 2:00PM*/
+UPDATE security.Menus
+SET PositionMenu = 812, Name ='Consulta Estado Afiliación'
+WHERE MenuId ='MVCModule.Module.Views.Certificates.StateAffiliate'
+
+UPDATE security.Menus
+SET PositionMenu = 813
+WHERE MenuId ='MVCModule.Module.Views.Certificates.afiliation'
+
+UPDATE security.Menus
+SET PositionMenu = 814
+WHERE MenuId ='MVCModule.Module.Views.Certificates.carnet'
+
+UPDATE security.Menus
+SET PositionMenu = 815, Name='Red de Prestadores'
+WHERE MenuId ='MVCModule.Module.Views.Certificates.Network'
+
+SELECT MenuId, PositionMenu
+FROM security.Menus
+WHERE MenuId LIKE '%MVCModule.Module.Views.Certificates%'
+ORDER BY PositionMenu
+
+UPDATE security.Menus
+SET PositionMenu = 816
+WHERE MenuId ='MVCModule.Module.Views.Certificates.TMP'
+
+--Estado Cartera
+insert into [PortalReal].[security].[Menus] (MenuId,Name,IsActive,CreatedBy,CreationDate,UpdateBy,UpdateDate,AppType,PositionMenu)
+values ('MVCModule.Module.Views.Certificates.StatePortFolio','Estado Cartera',1,'desarrollo',GETDATE(),'desarrollo',GETDATE(),5,817)
+--Instructivo
+insert into [PortalReal].[security].[Menus] (MenuId,Name,IsActive,CreatedBy,CreationDate,UpdateBy,UpdateDate,AppType,PositionMenu)
+values ('MVCModule.Module.Views.Certificates.Instructive','Instructivo',1,'desarrollo',GETDATE(),'desarrollo',GETDATE(),5,818)

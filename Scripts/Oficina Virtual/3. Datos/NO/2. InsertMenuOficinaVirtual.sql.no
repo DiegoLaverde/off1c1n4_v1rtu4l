@@ -1,0 +1,8 @@
+  insert into [PortalReal].[security].[Menus] (MenuId,Name,IsActive,CreatedBy,CreationDate,UpdateBy,UpdateDate,AppType,PositionMenu)
+  values ('MedicalModule.Views.VirtualOfficeView','Oficina virtual',1,'desarrollo',GETDATE(),'desarrollo',GETDATE(),5,802)
+    insert into [PortalReal].[security].[Menus] (MenuId,Name,IsActive,CreatedBy,CreationDate,UpdateBy,UpdateDate,AppType,PositionMenu)
+  values ('MedicalModule.Views.VirtualOfficeExternalView','Oficina Virtual Prestadores',1,'desarrollo',GETDATE(),'desarrollo',GETDATE(),5,802)
+  
+  
+ 
+  
