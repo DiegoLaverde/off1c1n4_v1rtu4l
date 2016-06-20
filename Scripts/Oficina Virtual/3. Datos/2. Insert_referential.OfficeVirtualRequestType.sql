@@ -1,0 +1,6 @@
+SET IDENTITY_INSERT [referential].[OfficeVirtualRequestType] ON
+INSERT [referential].[OfficeVirtualRequestType] ([typeRequestId], [requestTypeDesc], [responseTime], [Guion_1]) VALUES (1, N'CAMBIO RÉGIMEN ', 2, N'Esta opción permite gestionar un cambio  de régimen, por ejemplo de contributivo a subsidiado o de subsidiado a contributivo.')
+INSERT [referential].[OfficeVirtualRequestType] ([typeRequestId], [requestTypeDesc], [responseTime], [Guion_1]) VALUES (2, N'CAMBIO CIUDAD ORIGEN', 10, N'Esta opción permite gestionar un cambio de municipio donde se atiende al afiliado.')
+INSERT [referential].[OfficeVirtualRequestType] ([typeRequestId], [requestTypeDesc], [responseTime], [Guion_1]) VALUES (3, N'CAMBIO E.P.S.', 2, N'Esta opción permite gestionar el cambio de EPS.')
+INSERT [referential].[OfficeVirtualRequestType] ([typeRequestId], [requestTypeDesc], [responseTime], [Guion_1]) VALUES (4, N'CAMBIO CENTRO ATENCIÓN (IPS) ', 2, N'Esta opción permite gestionar el cambio en la IPS primaria.')
+SET IDENTITY_INSERT [referential].[OfficeVirtualRequestType] OFF
